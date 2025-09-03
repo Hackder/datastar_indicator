@@ -34,11 +34,11 @@ const INDEX_HTML = `<!DOCTYPE html>
 		input.value = 'hello';
 		input.dispatchEvent(new InputEvent('input', { bubbles: true, composed: true }));
 
-		// Wait 300ms, then "type" again
+		// Wait 800ms, then "type" again
 		setTimeout(() => {
 		  input.value = 'hello world';
 		  input.dispatchEvent(new InputEvent('input', { bubbles: true, composed: true }));
-		}, 500);
+		}, 800);
 	  }
 	</script>
 
